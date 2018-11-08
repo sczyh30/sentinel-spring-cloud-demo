@@ -129,6 +129,9 @@ The flow rule will take effect immediately. Wait a short time and back to the **
 
 For more details of Sentinel Dashboard, please refer to [dashboard document](https://github.com/alibaba/Sentinel/wiki/Dashboard).
 
+> Note: Rules pushed from Sentinel dashboard are stored in memory. If dynamic rule datasource is registered,
+the old rules will be replaced by rule changes from datasource.
+
 ### Configure rules in Nacos console
 
 If our application consists of plenty of machines (or containers), it's not a good idea to push rules to each machine one by one. 
